@@ -1,0 +1,143 @@
+# ==========================================
+# Automated MCQ Generator - .gitignore
+# ==========================================
+
+# ------------------------------------------
+# Python & Virtual Environments
+# ------------------------------------------
+backend/venv/
+backend/env/
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.pyd
+
+# Distribution / packaging
+dist/
+build/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+*.whl
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ------------------------------------------
+# Database & Runtime Data
+# ------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+backend/mcq_generator.db
+backend/*.db
+
+# NLP / ML models, weights, and caches (spaCy, NLTK, Hugging Face)
+nltk_data/
+models/
+*.pkl
+*.pickle
+*.joblib
+*.bin
+
+# ------------------------------------------
+# Node.js & Frontend (React / Vite)
+# ------------------------------------------
+frontend/node_modules/
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+dist-ssr/
+.vite/
+.cache/
+
+# NPM / Yarn / PNPM logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# ------------------------------------------
+# Operating System Files
+# ------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+
+# ------------------------------------------
+# IDE & Code Editor Settings
+# ------------------------------------------
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains / PyCharm / WebStorm
+.idea/
+*.iws
+*.iml
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+
+# ------------------------------------------
+# Temporary / Scratch Files
+# ------------------------------------------
+tmp/
+temp/
+uploads/
+*.tmp
+*.bak

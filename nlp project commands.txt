@@ -1,0 +1,35 @@
+Commands to Run the Application Anytime
+
+If you close the application and want to start it again in the future, use either of the methods below:
+
+Method 1: One-Click Launch (Recommended)
+
+Double-click run_app.bat in the project directory:
+
+powershell
+cd "c:\Users\Milind Rathod\Downloads\BCC\NLP"
+.\run_app.bat
+
+(This automatically boots the backend on port 8000, boots Vite on port 5173, and opens your browser.)
+
+Method 2: Running via Two Terminal Windows
+
+Terminal 1 — Backend (FastAPI):
+
+powershell
+cd "c:\Users\Milind Rathod\Downloads\BCC\NLP\backend"
+.\venv\Scripts\python.exe run_backend.py
+
+Terminal 2 — Frontend (React + Vite):
+
+powershell
+cd "c:\Users\Milind Rathod\Downloads\BCC\NLP\frontend"
+npm run dev
+
+Then navigate to: http://localhost:5173
+
+📝 Quick Test in the Web GUI
+On the Dashboard, click any of the Quick-Start Topics (e.g., Machine Learning or Artificial Intelligence).
+It will prefill the educational text and take you to the Generate MCQs page.
+Click Generate MCQs to run the local NLP pipeline (spaCy + TextRank + WordNet) and review the questions.
+You can also upload test documents directly from sample_documents (artificial_intelligence_notes.pdf, machine_learning_study_guide.txt, operating_systems_summary.pdf).
